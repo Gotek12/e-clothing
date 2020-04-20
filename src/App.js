@@ -2,12 +2,8 @@ import React from 'react';
 import './App.css';
 import HomePage from "./pages/homepage/homepage.component";
 import {Route, Switch} from 'react-router-dom';
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = () => (
-  <div>
-    <h1>Hats Page</h1>
-  </div>
-);
 
 function App() {
   return (
@@ -17,8 +13,7 @@ function App() {
       {/* switcch is special construct to give us control in switching pathes and rendering data */}
       <Switch>
         <Route exact path = "/" component = {HomePage}/>
-        <Route path = "/hats" component = {HatsPage}/>
-        <Route path = "/hats/:id" component = {HatsPage}/>
+        <Route path = "/shop" component = {ShopPage}/>
       </Switch>
     </div>
   );
