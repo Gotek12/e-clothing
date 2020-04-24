@@ -27,11 +27,12 @@ class App extends Component{
             id: snap.id,
             ...snap.data()
           }});
+          console.log(this.state);
         });
       } else{
         this.setState({currentUser: user}); //set to null, without it we can't sing out
       }
-    })
+    });
   }
 
   componentWillMount(){
